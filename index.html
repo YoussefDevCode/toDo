@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo Youssef</title>
+  </head>
+  <body>
+    <div id="theme-container" class="container">
+      <a href="#" id="float-btn" class="float" onclick="changeTheme()"> </a>
+      <div class="addTask">
+        <input
+          value=""
+          type="text"
+          name="input-text"
+          id="add-text"
+          placeholder="Add new task..."
+          onkeydown="addTaskEnter(event)"
+        />
+        <button id="btn-submit" type="submit" onclick="addTask()">
+          Add Task
+        </button>
+      </div>
+      <div class="listTasks">
+        <ul class="ulclass">
+          <li class="liclass" id="li_0">
+            <a>Enter tasks, edit or delete theme!</a>
+            <div class="btns">
+              <button
+                class="btn-dist-edit"
+                id="btnDelete_0"
+                type="submit"
+                onclick="editTask(event)"
+              >
+                Edite
+              </button>
+              <button
+                class="btn-dist-delete"
+                id="btnEdit_0"
+                type="submit"
+                onclick="deleteTask(event)"
+              >
+                Delete
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
