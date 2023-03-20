@@ -7,16 +7,15 @@ function addTaskEnter(e) {
   }
 }
 
-function changeTheme() {
-  const theme = document.getElementById("float-btn");
-  const addtaskContainer = document.getElementById("theme-container");
-  theme.style.backgroundColor = "blue";
-  addtaskContainer.style.backgroundColor = "grey";
-  console.log(addtaskContainer.style.backgroundColor);
-  if (addtaskContainer.style.backgroundColor == "white") {
-    addtaskContainer.style.backgroundColor = "grey";
+const colorSwitcher = document.querySelector("#float-btn");
+const container = document.querySelector(".container");
+colorSwitcher.addEventListener("click", () => {
+  if (container.style.backgroundColor === "rgb(242, 207, 228)") {
+    container.style.backgroundColor = "violet";
+  } else {
+    container.style.backgroundColor = "rgb(242, 207, 228)";
   }
-}
+});
 
 function addTask() {
   const addtext = document.getElementById("add-text");

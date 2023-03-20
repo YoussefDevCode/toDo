@@ -3,14 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   position: relative;
   scroll-behavior: smooth;
+  background-color: rgb(242, 207, 228);
   height: 100vh;
+  width: 100vw;
 }
 .container .float {
   position: fixed;
@@ -18,7 +20,7 @@
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: #34ebdf;
+  background-color: #2f3c7e;
   color: #fff;
   border-radius: 50px;
   text-align: center;
@@ -28,14 +30,15 @@
   padding: 0.5rem;
   top: 2rem;
   position: absolute;
-  background-color: aliceblue;
+  background-color: #7e2f65;
   height: 3rem;
   width: 40%;
   box-shadow: 0.25rem 0.25rem grey;
   border-radius: 3px;
 }
 .container .addTask #add-text {
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
+  padding: 0.5em;
   width: 70%;
   border-style: none;
 }
@@ -69,7 +72,7 @@
 }
 .container .listTasks .ulclass .liclass {
   position: relative;
-  background-color: #34ebdf;
+  background-color: #fbeaeb;
   border: solide;
   border-color: white;
   padding: 0.25rem;
@@ -84,7 +87,7 @@
   margin: 0.5rem;
   padding: 0.5rem;
   text-decoration: none;
-  color: white;
+  color: black;
   width: auto;
   display: block;
 }
@@ -123,4 +126,20 @@
 }
 .container .listTasks .ulclass .liclass .btns .btn-dist-delete:hover {
   background-color: rgb(236, 138, 138);
-} /*# sourceMappingURL=style.css.map */
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100vw;
+  }
+  .container .addTask {
+    width: 100%;
+  }
+  .container .addTask:hover {
+    width: 100%;
+    transform: translateY(0);
+  }
+  .container .listTasks {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
